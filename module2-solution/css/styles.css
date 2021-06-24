@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+h1{
+	color: #336092;
+	font-family: "Courier", sans-serif;
+	font-size: 200%;
+	text-align: center;
+}
+
+.title{
+	float: right;
+	left: 82%;
+	width: 5em;
+	border: 3px solid #0045b5;
+}
+
+section{
+	/*border: 1px dotted blue;*/
+	padding: 5px;
+}
+.child{
+	background-color: #ead25d;
+	border: 3px solid #041f4a;
+}
+
+p{
+	margin-top: 2em;
+	margin-bottom: 1px;
+}
+
+/*for desktops*/
+@media (min-width: 992px) {
+	section{
+		width: 33.33%;
+		float: left;
+	}
+}
+
+/*for tablets*/
+@media (min-width: 768px) and (max-width: 991px){
+	section{
+		width: 50%;
+		float: left;
+	}
+
+	#third_section{
+		width: 100%;
+	}
+}
+
+/*for mobiles*/
+@media (max-width: 767px){
+	section{
+		clear: left;
+	}
+}
